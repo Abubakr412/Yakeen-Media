@@ -1,15 +1,13 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles, Zap } from "lucide-react";
-
 const Hero = () => {
   const scrollToServices = () => {
     const servicesSection = document.getElementById('services');
-    servicesSection?.scrollIntoView({ behavior: 'smooth' });
+    servicesSection?.scrollIntoView({
+      behavior: 'smooth'
+    });
   };
-
-  return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
+  return <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Enhanced gradient background with more layers */}
       <div className="absolute inset-0 gradient-hero"></div>
       
@@ -22,9 +20,9 @@ const Hero = () => {
       {/* Animated grid pattern */}
       <div className="absolute inset-0 opacity-[0.03]">
         <div className="absolute inset-0" style={{
-          backgroundImage: `radial-gradient(circle at 1px 1px, white 1px, transparent 0)`,
-          backgroundSize: '50px 50px'
-        }}></div>
+        backgroundImage: `radial-gradient(circle at 1px 1px, white 1px, transparent 0)`,
+        backgroundSize: '50px 50px'
+      }}></div>
       </div>
       
       <div className="container mx-auto px-6 text-center max-w-6xl relative z-10">
@@ -49,7 +47,7 @@ const Hero = () => {
         <p className="text-2xl md:text-3xl text-foreground/85 mb-8 max-w-5xl mx-auto leading-relaxed font-medium">
           We're a <span className="text-primary font-bold">results-driven</span> influencer marketing agency that connects your brand with authentic creators to drive 
           <span className="bg-gradient-to-r from-pink-400 to-yellow-400 bg-clip-text text-transparent font-bold"> meaningful engagement</span> and 
-          <span className="bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent font-bold"> measurable growth</span>.
+          <span className="bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent font-bold"> growth</span>.
         </p>
         
         <p className="text-xl text-foreground/70 mb-16 max-w-4xl mx-auto leading-relaxed">
@@ -58,19 +56,13 @@ const Hero = () => {
         
         <div className="relative group inline-block">
           <div className="absolute -inset-1 bg-gradient-to-r from-primary via-pink-500 to-yellow-500 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-300 glow-effect"></div>
-          <Button 
-            onClick={scrollToServices}
-            size="lg" 
-            className="relative bg-gradient-to-r from-primary to-pink-500 hover:from-pink-500 hover:to-yellow-500 text-white px-12 py-8 text-xl font-bold rounded-full shadow-2xl hover:shadow-primary/50 transition-all duration-500 hover:scale-110 border-2 border-white/20"
-          >
+          <Button onClick={scrollToServices} size="lg" className="relative bg-gradient-to-r from-primary to-pink-500 hover:from-pink-500 hover:to-yellow-500 text-white px-12 py-8 text-xl font-bold rounded-full shadow-2xl hover:shadow-primary/50 transition-all duration-500 hover:scale-110 border-2 border-white/20">
             <Sparkles className="mr-3 h-6 w-6 animate-spin" />
             See Our Services
             <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-2 transition-transform duration-300" />
           </Button>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
