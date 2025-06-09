@@ -20,7 +20,7 @@ const Hero = () => {
       <div className="container mx-auto px-6 text-center max-w-5xl relative z-10">
         <div className="flex items-center justify-center mb-6">
           <Sparkles className="h-8 w-8 text-white mr-3 animate-pulse" />
-          <span className="text-white/90 font-medium tracking-wide">Next-Gen Marketing</span>
+          <span className="text-white/90 font-medium tracking-wide">Yakeen Media</span>
         </div>
         
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-8 leading-tight">
@@ -31,11 +31,11 @@ const Hero = () => {
         </h1>
         
         <p className="text-xl md:text-2xl text-white/90 mb-6 max-w-4xl mx-auto leading-relaxed">
-          We connect your brand with the right influencers, manage campaigns, and track performance—transparently.
+          We're a results-driven influencer marketing agency that connects your brand with authentic creators to drive meaningful engagement and measurable growth.
         </p>
         
         <p className="text-lg text-white/80 mb-12 max-w-3xl mx-auto">
-          We handle influencer sourcing, contracts, and reporting—so you don't have to.
+          From influencer discovery to campaign execution and performance tracking—we handle it all transparently, so you can focus on your business.
         </p>
         
         <Button 

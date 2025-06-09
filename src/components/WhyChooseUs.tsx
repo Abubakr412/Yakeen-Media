@@ -6,19 +6,19 @@ const WhyChooseUs = () => {
     {
       icon: Zap,
       title: "No Long-term Contracts",
-      description: "Pay per campaign with complete flexibility",
+      description: "Pay per campaign with complete flexibility and no hidden commitments",
       gradient: "from-yellow-400 to-orange-500"
     },
     {
       icon: Shield,
       title: "Direct Network Access",
-      description: "Exclusive access to our vetted influencer network",
+      description: "Exclusive access to Yakeen Media's vetted influencer network across all major platforms",
       gradient: "from-green-400 to-blue-500"
     },
     {
       icon: CheckCircle,
       title: "Transparent Pricing",
-      description: "Clear pricing with no hidden fees or surprises",
+      description: "Clear, upfront pricing with detailed breakdowns and no surprise fees",
       gradient: "from-purple-400 to-pink-500"
     }
   ];
@@ -28,14 +28,14 @@ const WhyChooseUs = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto text-center">
           <div className="inline-flex items-center px-4 py-2 bg-primary/10 rounded-full mb-6">
-            <span className="text-primary font-medium">Why Choose Us</span>
+            <span className="text-primary font-medium">Why Choose Yakeen Media</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Built for 
             <span className="bg-gradient-to-r from-primary to-pink-500 bg-clip-text text-transparent"> Modern Brands</span>
           </h2>
           <p className="text-xl text-muted-foreground mb-16 max-w-3xl mx-auto">
-            We've reimagined influencer marketing to be transparent, flexible, and results-driven
+            At Yakeen Media, we've reimagined influencer marketing to be transparent, flexible, and results-driven for today's digital landscape
           </p>
           
           <div className="grid md:grid-cols-3 gap-8">

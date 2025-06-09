@@ -20,7 +20,7 @@ const CTA = () => {
             <br />Your Marketing?
           </h2>
           <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-3xl mx-auto leading-relaxed">
-            Let's discuss your influencer marketing goals and create a strategy that delivers measurable results.
+            Partner with Yakeen Media to elevate your brand through strategic influencer marketing that delivers authentic engagement and measurable growth.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

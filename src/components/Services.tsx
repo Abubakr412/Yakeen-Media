@@ -7,25 +7,25 @@ const Services = () => {
     {
       icon: Search,
       title: "Influencer Discovery & Vetting",
-      description: "We find and verify influencers who align with your brand values and audience.",
+      description: "We find and verify authentic influencers who align with your brand values and target audience.",
       gradient: "from-purple-500 to-purple-600"
     },
     {
       icon: Target,
       title: "Campaign Strategy & Management",
-      description: "From brief to execution, we handle influencer outreach, contracts, and content coordination.",
+      description: "From creative brief to execution, we handle influencer outreach, contracts, and content coordination.",
       gradient: "from-blue-500 to-purple-500"
     },
     {
       icon: CheckCircle,
       title: "Content Review & Approval",
-      description: "We ensure all posts meet your brand guidelines before they go live.",
+      description: "We ensure all posts meet your brand guidelines and quality standards before they go live.",
       gradient: "from-pink-500 to-purple-500"
     },
     {
       icon: BarChart3,
       title: "Performance Tracking & Reporting",
-      description: "Monthly reports on reach, engagement, and ROI—no jargon, just clear metrics.",
+      description: "Comprehensive monthly reports on reach, engagement, conversions, and ROI—clear metrics you can act on.",
       gradient: "from-indigo-500 to-blue-500"
     }
   ];
@@ -35,14 +35,14 @@ const Services = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-20">
           <div className="inline-flex items-center px-4 py-2 bg-primary/10 rounded-full mb-6">
-            <span className="text-primary font-medium">Our Services</span>
+            <span className="text-primary font-medium">Yakeen Media Services</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Everything You Need for 
-            <span className="bg-gradient-to-r from-primary to-pink-500 bg-clip-text text-transparent"> Success</span>
+            <span className="bg-gradient-to-r from-primary to-pink-500 bg-clip-text text-transparent"> Influencer Success</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Comprehensive influencer marketing solutions designed to drive real results for your brand
+            Yakeen Media specializes in data-driven influencer marketing solutions that deliver authentic connections and measurable results for your brand
           </p>
         </div>
         
