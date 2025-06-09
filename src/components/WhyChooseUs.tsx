@@ -24,7 +24,7 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <section className="py-24 bg-gradient-to-br from-purple-50/50 to-blue-50/30">
+    <section className="py-24 bg-gradient-to-br from-primary/5 to-background">
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto text-center">
           <div className="inline-flex items-center px-4 py-2 bg-primary/10 rounded-full mb-6">
@@ -41,7 +41,7 @@ const WhyChooseUs = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {benefits.map((benefit, index) => (
               <div key={index} className="group">
-                <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 border border-white/20">
+                <div className="bg-card/50 backdrop-blur-sm rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 border border-white/10">
                   <div className={`mb-6 p-4 bg-gradient-to-r ${benefit.gradient} rounded-2xl w-fit mx-auto shadow-lg group-hover:scale-110 transition-transform duration-300`}>
                     <benefit.icon className="h-8 w-8 text-white" />
                   </div>

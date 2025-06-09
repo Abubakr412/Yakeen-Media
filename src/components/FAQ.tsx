@@ -22,7 +22,7 @@ const FAQ = () => {
   ];
 
   return (
-    <section className="py-24 bg-gradient-to-br from-slate-50 to-purple-50/30">
+    <section className="py-24 bg-gradient-to-br from-background to-primary/5">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
@@ -43,7 +43,7 @@ const FAQ = () => {
               <AccordionItem 
                 key={index} 
                 value={`item-${index}`} 
-                className="bg-white/80 backdrop-blur-sm rounded-2xl px-8 py-2 shadow-lg hover:shadow-xl transition-all duration-300 border border-white/20"
+                className="bg-card/50 backdrop-blur-sm rounded-2xl px-8 py-2 shadow-lg hover:shadow-xl transition-all duration-300 border border-white/10"
               >
                 <AccordionTrigger className="text-lg font-semibold text-left hover:no-underline text-foreground hover:text-primary transition-colors py-6">
                   {faq.question}

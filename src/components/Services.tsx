@@ -31,7 +31,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-24 bg-gradient-to-br from-slate-50 to-purple-50/30">
+    <section id="services" className="py-24 bg-gradient-to-br from-background via-background to-primary/5">
       <div className="container mx-auto px-6">
         <div className="text-center mb-20">
           <div className="inline-flex items-center px-4 py-2 bg-primary/10 rounded-full mb-6">
@@ -48,7 +48,7 @@ const Services = () => {
         
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {services.map((service, index) => (
-            <Card key={index} className="group border-0 shadow-lg hover:shadow-2xl transition-all duration-500 bg-white/80 backdrop-blur-sm hover:scale-[1.02]">
+            <Card key={index} className="group border-0 shadow-lg hover:shadow-2xl transition-all duration-500 bg-card/50 backdrop-blur-sm hover:scale-[1.02] border border-white/10">
               <CardHeader className="text-center pb-6">
                 <div className={`mx-auto mb-6 p-4 bg-gradient-to-r ${service.gradient} rounded-2xl w-fit shadow-lg group-hover:scale-110 transition-transform duration-300`}>
                   <service.icon className="h-8 w-8 text-white" />

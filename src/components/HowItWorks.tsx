@@ -24,7 +24,7 @@ const HowItWorks = () => {
   ];
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-gradient-to-br from-background to-primary/5">
       <div className="container mx-auto px-6">
         <div className="text-center mb-20">
           <div className="inline-flex items-center px-4 py-2 bg-primary/10 rounded-full mb-6">
@@ -51,7 +51,7 @@ const HowItWorks = () => {
                 <div className="flex flex-col items-center text-center relative z-10">
                   <div className={`mb-8 p-6 bg-gradient-to-r ${step.color} rounded-3xl shadow-xl group-hover:scale-110 transition-all duration-300 relative`}>
                     <step.icon className="h-10 w-10 text-white" />
-                    <div className="absolute -top-2 -right-2 w-8 h-8 bg-white rounded-full flex items-center justify-center text-primary font-bold text-sm shadow-lg">
+                    <div className="absolute -top-2 -right-2 w-8 h-8 bg-foreground rounded-full flex items-center justify-center text-background font-bold text-sm shadow-lg">
                       {index + 1}
                     </div>
                   </div>
