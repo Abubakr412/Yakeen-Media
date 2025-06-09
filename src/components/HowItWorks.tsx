@@ -6,44 +6,62 @@ const HowItWorks = () => {
     {
       icon: MessageCircle,
       title: "Consultation",
-      description: "Tell us your goals"
+      description: "Tell us your goals and target audience",
+      color: "from-purple-500 to-pink-500"
     },
     {
       icon: Rocket,
       title: "Campaign Launch",
-      description: "We handle influencer matching & content"
+      description: "We handle influencer matching & content creation",
+      color: "from-blue-500 to-purple-500"
     },
     {
       icon: TrendingUp,
       title: "Review Results",
-      description: "Get actionable insights"
+      description: "Get detailed analytics and actionable insights",
+      color: "from-indigo-500 to-blue-500"
     }
   ];
 
   return (
-    <section className="py-24 bg-slate-50">
+    <section className="py-24 bg-white">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4">How It Works</h2>
-          <p className="text-xl text-muted-foreground">
-            Simple process, powerful results
+        <div className="text-center mb-20">
+          <div className="inline-flex items-center px-4 py-2 bg-primary/10 rounded-full mb-6">
+            <span className="text-primary font-medium">How It Works</span>
+          </div>
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            Simple Process, 
+            <span className="bg-gradient-to-r from-primary to-pink-500 bg-clip-text text-transparent"> Powerful Results</span>
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            Get started with our streamlined three-step approach
           </p>
         </div>
         
-        <div className="max-w-4xl mx-auto">
-          <div className="flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-12 md:gap-8">
             {steps.map((step, index) => (
-              <div key={index} className="flex flex-col items-center text-center md:flex-1">
-                <div className="mb-6 p-4 bg-emerald-600 rounded-full">
-                  <step.icon className="h-8 w-8 text-white" />
-                </div>
-                <h3 className="text-2xl font-semibold mb-3">{step.title}</h3>
-                <p className="text-muted-foreground text-lg max-w-xs">
-                  {step.description}
-                </p>
+              <div key={index} className="relative group">
+                {/* Connection line */}
                 {index < steps.length - 1 && (
-                  <div className="hidden md:block absolute w-24 h-0.5 bg-emerald-200 transform translate-x-32 mt-12"></div>
+                  <div className="hidden md:block absolute top-16 left-full w-full h-0.5 bg-gradient-to-r from-primary/30 to-transparent transform -translate-x-4 z-0"></div>
                 )}
+                
+                <div className="flex flex-col items-center text-center relative z-10">
+                  <div className={`mb-8 p-6 bg-gradient-to-r ${step.color} rounded-3xl shadow-xl group-hover:scale-110 transition-all duration-300 relative`}>
+                    <step.icon className="h-10 w-10 text-white" />
+                    <div className="absolute -top-2 -right-2 w-8 h-8 bg-white rounded-full flex items-center justify-center text-primary font-bold text-sm shadow-lg">
+                      {index + 1}
+                    </div>
+                  </div>
+                  <h3 className="text-2xl font-bold mb-4 text-foreground group-hover:text-primary transition-colors">
+                    {step.title}
+                  </h3>
+                  <p className="text-muted-foreground text-lg leading-relaxed max-w-xs">
+                    {step.description}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
