@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles, Zap } from "lucide-react";
 const Hero = () => {
@@ -38,16 +39,16 @@ const Hero = () => {
         </div>
         
         <h1 className="text-6xl md:text-8xl font-black text-foreground mb-10 leading-tight">
-          Strategic Influencer Marketing—
+          Premium Influencer Marketing—
           <span className="block bg-gradient-to-r from-primary via-pink-400 via-yellow-400 to-orange-400 bg-clip-text text-transparent text-glow animate-pulse">
-            Without the Guesswork
+            That Captivates & Converts
           </span>
         </h1>
         
         <p className="text-2xl md:text-3xl text-foreground/85 mb-8 max-w-5xl mx-auto leading-relaxed font-medium">
           We're a <span className="text-primary font-bold">results-driven</span> influencer marketing agency that connects your brand with authentic creators to drive 
           <span className="bg-gradient-to-r from-pink-400 to-yellow-400 bg-clip-text text-transparent font-bold"> meaningful engagement</span> and 
-          <span className="bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent font-bold"> growth</span>.
+          <span className="bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent font-bold"> growth</span>.
         </p>
         
         <p className="text-xl text-foreground/70 mb-16 max-w-4xl mx-auto leading-relaxed">
