@@ -1,6 +1,6 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles, Zap } from "lucide-react";
-
 const Hero = () => {
   const scrollToServices = () => {
     const servicesSection = document.getElementById('services');
@@ -8,9 +8,7 @@ const Hero = () => {
       behavior: 'smooth'
     });
   };
-
-  return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
+  return <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Enhanced gradient background with more layers */}
       <div className="absolute inset-0 gradient-hero"></div>
       
@@ -23,9 +21,9 @@ const Hero = () => {
       {/* Animated grid pattern */}
       <div className="absolute inset-0 opacity-[0.03]">
         <div className="absolute inset-0" style={{
-          backgroundImage: `radial-gradient(circle at 1px 1px, white 1px, transparent 0)`,
-          backgroundSize: '50px 50px'
-        }}></div>
+        backgroundImage: `radial-gradient(circle at 1px 1px, white 1px, transparent 0)`,
+        backgroundSize: '50px 50px'
+      }}></div>
       </div>
       
       <div className="container mx-auto px-6 text-center max-w-6xl relative z-10">
@@ -34,17 +32,15 @@ const Hero = () => {
             <Sparkles className="h-10 w-10 text-primary mr-4 animate-pulse group-hover:scale-110 transition-transform duration-300" />
             <div className="absolute inset-0 h-10 w-10 mr-4 bg-primary/20 rounded-full blur-xl"></div>
           </div>
-          <img 
-            src="/lovable-uploads/0ff06fd2-0da5-431a-ade2-b28c39b59021.png" 
-            alt="Yakeen Media" 
-            className="h-16 w-auto"
-          />
+          <span className="text-foreground/90 font-bold text-xl tracking-wider bg-gradient-to-r from-primary via-pink-400 to-yellow-400 bg-clip-text text-transparent">
+            Yakeen Media
+          </span>
           <Zap className="h-6 w-6 text-yellow-400 ml-2 animate-bounce" />
         </div>
         
         <h1 className="text-6xl md:text-8xl font-black text-foreground mb-10 leading-tight">
           Premium Influencer Marketing—
-          <span className="block bg-gradient-to-r from-primary via-pink-400 to-yellow-400 bg-clip-text text-transparent">
+          <span className="block bg-gradient-to-r from-primary via-pink-400 via-yellow-400 to-orange-400 bg-clip-text text-transparent text-glow animate-pulse">
             That Captivates & Converts
           </span>
         </h1>
@@ -68,8 +64,6 @@ const Hero = () => {
           </Button>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
